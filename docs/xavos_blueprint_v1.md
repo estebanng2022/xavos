@@ -181,6 +181,47 @@ Funciones:
   - “Inserción en pantalla actual (modo visual)”
 - Todo bien documentado y separado por lenguaje.
 
+### 3.10 Project Screen & Canvas Views
+
+#### 3.10.1 Project Screen (Home)
+
+- Pantalla principal del proyecto (ej: “Copilot Road”).
+- Muestra:
+  - nombre del proyecto y estado (Exploración / Diseño / Desarrollo / Mantenimiento)
+  - porcentaje de avance
+  - fase actual y próximo paso importante
+  - lista de pasos/fases con checklist (qué está hecho y qué falta)
+- Incluye acceso directo a:
+  - Documentos del proyecto (blueprints, notas, changelog)
+  - Canvas del proyecto (UI y lógica)
+
+#### 3.10.2 UI Canvas (modo visual de pantallas)
+
+- Vista tipo Figma para construir pantallas.
+- Elementos:
+  - área central con la pantalla
+  - lista de widgets disponibles
+  - panel de propiedades (scroll, padding, opciones del scaffold, etc.)
+- Flujo:
+  - arrastrar y colocar widgets
+  - ajustar propiedades
+  - confirmar cambios
+  - Xavos actualiza el código real manteniendo la estructura limpia.
+
+#### 3.10.3 Logic Canvas (System Map)
+
+- Vista lógica del proyecto (no de diseño visual).
+- Se usa para ver:
+  - pantallas y navegación entre ellas
+  - módulos (auth, gps, scan, docs, notificaciones)
+  - conexiones con backend / APIs / DB / otros sistemas
+- Usa cajas, iconos y flechas para mostrar el flujo.
+- Soporta varios niveles de zoom:
+  - vista ecosistema (usuario, dispositivo, backend)
+  - vista sistema (módulos y capas)
+  - vista zona (solo un módulo o parte de la app)
+- Cada caja está vinculada a rutas reales del proyecto (folders, archivos, pantallas), y desde aquí se puede abrir el código en el editor integrado.
+
 ## 4. Filosofía
 
 - Todo bajo reglas claras (nada mágico sin control).
