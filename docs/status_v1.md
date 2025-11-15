@@ -25,7 +25,9 @@
 - Flujo inicial del Wizard (`docs/wizard_flow_v1.md`).
 - Lista de tareas inicial (`docs/tasks_v1.md`).
 - Opciones de tech stack (`docs/tech_stack_options.md`).
+- Módulos por defecto (`docs/default_modules_v1.md`).
+- DS por defecto conceptual (`docs/default_ds_v1.md`).
 
 ## Próximo
-- Definir DS por defecto para proyectos nuevos.
-- Definir módulos por defecto que vendrán activados en cada stack.
+- Elegir la primera app real que Xavos ayudará a crear (Harmonia o RoadPilot).
+- Definir la estructura de carpetas de un proyecto generado de ejemplo.
