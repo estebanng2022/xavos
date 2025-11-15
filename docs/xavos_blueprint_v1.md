@@ -69,6 +69,19 @@ Que al presionar **“New Project”** en Xavos:
 - Si un proyecto trae su propio DS:
   - Xavos respeta el DS del proyecto.
 
+#### 3.4.1 Modelo de DS maestro + copia por cliente
+
+- Xavos tendrá un **Design System maestro** (mi DS base) que vive fuera de los proyectos de clientes.
+- Cuando se crea un proyecto para un cliente:
+  - Xavos genera una **copia/snapshot** del DS maestro dentro del repo del cliente.
+  - Esa copia se puede adaptar (colores, tamaños, algunos componentes) sin romper el DS maestro.
+- La app del cliente:
+  - siempre compila sola, sin necesitar Xavos.
+  - siempre incluye su propio DS dentro del proyecto.
+- Frase correcta:
+  - “La app incluye una copia adaptada de mi DS maestro”
+  - NO: “La app depende de Xavos para su DS”.
+
 ### 3.5 Biblioteca de widgets y templates
 
 - Widgets base premium:
@@ -92,7 +105,7 @@ Que al presionar **“New Project”** en Xavos:
 
 ### 3.6 AI Control Room (equipo de AIs)
 
-- Xavos tendrá una pantalla donde se vean los AIs como “perfiles”: 
+- Xavos tendrá una pantalla donde se vean los AIs como “perfiles": 
   - nombre
   - rol (Dev-AI, Doc-AI, Pipeline-AI, Wizard, Commander, etc.)
   - estado (activo / pausado)
