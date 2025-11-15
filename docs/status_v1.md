@@ -27,5 +27,5 @@
 - Opciones de tech stack (`docs/tech_stack_options.md`).
 
 ## Próximo
-- Elegir tech stack para Xavos.
-- Definir estructura real de config (`xavos_config`).
+- Definir DS por defecto para proyectos nuevos.
+- Definir módulos por defecto que vendrán activados en cada stack.
